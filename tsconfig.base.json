@@ -1,0 +1,26 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "esnext",
+		"skipLibCheck": true,
+		"moduleResolution": "bundler",
+		"strict": true,
+		"strictNullChecks": true,
+		"incremental": true,
+		"noUnusedLocals": false,
+		"noUnusedParameters": false,
+		"noFallthroughCasesInSwitch": true,
+		"noUncheckedSideEffectImports": true,
+		"useDefineForClassFields": true,
+		"resolveJsonModule": true,
+		"verbatimModuleSyntax": true,
+		"allowSyntheticDefaultImports": true,
+		"types": ["@total-typescript/ts-reset", "node"]
+	},
+	"references": [
+		{ "path": "packages/logger" },
+		{ "path": "packages/utils" },
+		{ "path": "packages/env" },
+		{ "path": "apps/example" }
+	]
+}

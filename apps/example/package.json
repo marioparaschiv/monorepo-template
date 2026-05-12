@@ -1,0 +1,22 @@
+{
+	"name": "@project/example",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "tsx watch src/index.ts",
+		"start": "tsx src/index.ts",
+		"typecheck": "tsgo --noEmit"
+	},
+	"dependencies": {
+		"@project/env": "workspace:*",
+		"@project/logger": "workspace:*",
+		"@project/utils": "workspace:*",
+		"zod": "catalog:"
+	},
+	"devDependencies": {
+		"@total-typescript/ts-reset": "catalog:",
+		"@typescript/native-preview": "catalog:",
+		"tsx": "catalog:"
+	}
+}

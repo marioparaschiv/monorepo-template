@@ -1,0 +1,17 @@
+{
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"composite": true,
+		"emitDeclarationOnly": true,
+		"declarationDir": ".types",
+		"types": ["node", "@total-typescript/ts-reset"],
+		"paths": {
+			"~/*": ["./src/*"]
+		}
+	},
+	"references": [
+		{ "path": "../../packages/logger" },
+		{ "path": "../../packages/utils" },
+		{ "path": "../../packages/env" }
+	]
+}
