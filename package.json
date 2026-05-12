@@ -11,22 +11,22 @@
 		"lint": "oxlint --config .oxlintrc.json --fix-dangerously apps packages",
 		"fmt": "oxfmt --config .oxfmtrc.json apps packages",
 		"fmt:check": "oxfmt --config .oxfmtrc.json --check apps packages",
-		"typecheck": "pnpm -r --if-present run typecheck"
+		"typecheck": "pnpm -r --filter \"./packages/*\" exec tsgo --emitDeclarationOnly && pnpm -r --if-present run typecheck"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "20.5.0",
-		"@commitlint/config-angular": "20.5.0",
+		"@commitlint/cli": "21.0.0",
+		"@commitlint/config-angular": "21.0.0",
 		"@stylistic/eslint-plugin": "^5.10.0",
 		"@types/node": "catalog:",
 		"@typescript/native-preview": "catalog:",
-		"@vitest/coverage-v8": "4.1.4",
-		"eslint-plugin-perfectionist": "^5.7.0",
+		"@vitest/coverage-v8": "4.1.6",
+		"eslint-plugin-perfectionist": "^5.9.0",
 		"husky": "9.1.7",
-		"oxfmt": "^0.46.0",
-		"oxlint": "^1.61.0",
-		"tsdown": "^0.21.7",
-		"tsx": "^4.20.6",
-		"vitest": "^4.1.4"
+		"oxfmt": "^0.48.0",
+		"oxlint": "^1.63.0",
+		"tsdown": "^0.22.0",
+		"tsx": "^4.21.0",
+		"vitest": "^4.1.6"
 	},
 	"engines": {
 		"node": ">=24.0.0",
