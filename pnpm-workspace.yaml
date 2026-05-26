@@ -8,7 +8,7 @@ allowBuilds:
 catalog:
   '@total-typescript/ts-reset': ^0.6.1
   '@types/node': ^25.6.2
-  '@typescript/native-preview': 7.0.0-dev.20260511.1
+  '@typescript/native-preview': 7.0.0-dev.20260515.1
   tsx: ^4.21.0
   typescript: ^5.9.3
   vitest: ^4.1.6
